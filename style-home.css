@@ -1,0 +1,49 @@
+#banner {
+	width:100%;
+}
+
+.principal{
+	background: #CCCCCC;
+	padding: 30px;  /*Espaçamento interno*/
+}
+
+.titulo-principal {
+	padding-left: 20px; /*espaçamento interno para a esquerda de 20px*/
+}
+
+.titulo-centralizado {
+	text-align: center
+}
+
+p {
+	text-align: center; /*centralizando texto*/
+}
+
+#missao { /*o uso do # no inicio significa que se trata de uma id*/
+	font-size: 20px
+}
+
+em strong { /*estilizando todos os strongs que estão dentro do em*/
+	color: #FF0000;
+}
+
+.itens { /*o uso do . no inicio significa que se trata de uma class*/
+	font-style: italic;
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+ul {
+	display: inline-block; /*sendo iline-block, ele ocupa só o tamanho do seu conteúdo, mais deixa mexer em sua largura e espaçamento*/
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagembeneficios {
+	width: 50%;
+	border-radius: 15px; /*serve para arredondar as bordas da imagem*/
+}

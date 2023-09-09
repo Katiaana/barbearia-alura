@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">	
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+
+				<nav><!--Para navegação menu-->
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        <main> <!--Usado par o conteúdo principal da página-->
+            <form> <!--Tag usada para formulário-->
+                <label for="nomesobrenome">Nome e Sobrenome</label> <!--Label etiqueta usada para informar sobre os dados, e para o for dela funcionar é preciso ter um ID no elemento input-->
+                <input type="text" id="nomesobrenome" class="input-padrao" required> <!--Entrada de dados do usuário no formulário do tipo texto. REQUIRED-quer dizer obrigatório, quando enviamos vazio ele apresenta uma msg de alerta dizendo que precisa ser preenchido. -->
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemailmail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+				<label for="mensagem">Mensagem</label> <!--A LABEL é a etiqueta dizendo qual é o conteúdo da caixa de texto.-->
+				<textarea cols="68" rows="10" id="mensagem" class="input-padrao"></textarea required> <!--TETAREA é uma caixa de texto onde pode se escrever uma msg de texto de mais de 1 linha. COLS-são tamanho de colunas nela, e o ROWS-são linhas nela.-->
+
+				<fieldset> <!--É usada para agrupar elementos.-->
+					<legend>Como prefere o nosso contato?</legend> <!--Usada p/titulo.-->
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-mail">Email</label><!--Tipo do INPUT dentro de uma LABEL-CHECKBOX é um botão redondo, tem um valor, e o ID para que dar sentido ao FOR da LABEL. O NAME-serve para mostrar que fazem parte do mesmo grupo e deixar marcar apenas uma opção.-->
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+					<label for="radio-whatsap"><input type="radio" name="contato" value="whatsap" id="radio-whatsap" checked>WhatsApp</label> <!--checked deixa já marcada opção como sugestão.-->		
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select> <!--è um controle que apresenta um menu de opções, que podem ser pré-selecionadas par o usuário.-->
+						<option value="">Manhã</option> <!--Opções ao usuário -->
+						<option value="">Tarde</option>
+						<option value="">Noite</option>
+					</select>
+				</fieldset>
+				
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades por email?</label> <!--CHECKBOX- a gente cria um INPUT dentro do LABEl para facilitar, cria um botão quadrado junto da informação.--><!--checked deixa já marcada opção, podendo usuário desmarcar.-->
+				<input type="submit" value="Enviar formulário" class="enviar"> <!--O tipo SUBMIT quer dizer ENVIAR, já é entendido pelo navegador-Mas nesse caso colocamos ENVIAR FORMULARIO-botão.-->
+            </form>
+
+			<table> <!--Tag usada para criar tabela.-->
+				<thead> <!--Cabeçalho da tabela.-->
+					<tr> <!--Linhas-->
+						<tr>
+							<td colspan="2">Horário de Funcionamento</td> <!--COLSPLAN-é usada para colocar um único nome em mais de uma coluna. Onde deveria aparecer duas células, aparece só uma.-->
+						</tr>
+						<th>Dia</th> <!--Celulas-->
+						<th>Horário</th>	
+					</tr>
+				</thead>
+				<tbody> <!--Corpo da tabela.-->
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>	
+				</tbody>
+			</table>
+        </main>
+
+        <footer> <!--É a tag usada para o rodapé da página.-->
+			<img src="logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p> <!--&copy para aparecer o C-->
+		</footer>
+	</body>
+</html>
